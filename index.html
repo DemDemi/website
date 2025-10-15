@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Coverflow - One Page Portfolio</title>
+    <link href="templatemo-3d-coverflow.css" rel="stylesheet">
+    <!--
+
+TemplateMo 595 3d coverflow
+
+https://templatemo.com/tm-595-3d-coverflow
+
+-->
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <a href="#home" class="logo-container">
+
+            <div class="logo">
+                <img src="./images/logo.png" style="width: 50px;" />
+
+            </div>
+            <div class="logo-text">Desoft Home</div>
+        </a>
+
+        <nav class="main-menu" id="mainMenu">
+            <a href="#home" class="menu-item active">მტავარი</a>
+            <a href="#about" class="menu-item">შესახებ</a>
+            <a href="#contact" class="menu-item">ინსტალაცია</a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+                class="menu-item external">Facebook</a>
+        </nav>
+
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="coverflow-wrapper">
+            <div class="info">
+                <h2 id="current-title">უძრავი ქონების ავტომატიზაცია</h2>
+                <p id="current-description">ავტოამტვირთავი, ss, myhome</p>
+            </div>
+
+            <div class="coverflow-container" tabindex="0">
+                <div class="coverflow" id="coverflow">
+                    <div class="coverflow-item" data-index="0">
+                        <div class="cover image-loading">
+                            <img src="images/forest-path.jpg" alt="Mountain Landscape" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                    <div class="coverflow-item" data-index="1">
+                        <div class="cover image-loading">
+                            <img src="images/cascading-waterfall.jpg" alt="Forest Path" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+                    <div class="coverflow-item" data-index="2">
+                        <div class="cover image-loading">
+                            <img src="images/photo_clean.jpg" alt="Lake Reflection" loading="lazy">
+                        </div>
+                        <div class="reflection"></div>
+                    </div>
+
+                </div>
+
+                <button class="nav-button prev" onclick="navigate(-1)">‹</button>
+                <button class="nav-button next" onclick="navigate(1)">›</button>
+
+                <div class="dots-container" id="dots"></div>
+
+                <button class="play-pause-button" id="playPauseBtn" onclick="toggleAutoplay()">
+                    <span class="play-icon">▶</span>
+                    <span class="pause-icon" style="display: none;">❚❚</span>
+                </button>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="about-content">
+            <div class="about-header">
+                <h2>შეინახე და დაგაიტანე განცხადება</h2>
+                <p>დაზოგე დრო "ბროკერებისთვის"</p>
+            </div>
+
+            <div class="about-main">
+                <div class="about-visual">
+                    <div class="showcase-display">
+                        <div class="showcase-main">
+                            <div class="corner-decoration top-left"></div>
+                            <div class="corner-decoration bottom-right"></div>
+
+                            <div class="showcase-logo">
+                                <div style="width: 100px;height: 100px;">
+                                    <img src="./images/home.png" style="width: 100%;">
+                                </div>
+
+
+                            </div>
+
+                            <h3 class="showcase-title">Desoft</h3>
+                            <p class="showcase-subtitle">Homes</p>
+
+                            <div class="showcase-badges">
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"
+                                    rel="noopener noreferrer" class="badge">სწრაფი</a>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"
+                                    rel="noopener noreferrer" class="badge">ხელმისაწვდომი</a>
+                                <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"
+                                    rel="noopener noreferrer" class="badge">სანდო</a>
+                                <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design"
+                                    target="_blank" rel="noopener noreferrer" class="badge">გამოცდილი</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-info">
+                    <h3>უძრავი ქონების ავტომატიზაცია</h3>
+                    <h3>ss, myhome, website</h3>
+                    <p> დროის დაზოგვა 90% ავტომატიზაცია უძრავი ქონებისთვის, სტაბილური და განახლებადი ინსტრუმენტი</p>
+                    
+
+                    <ul class="feature-list">
+                        <li>ავტომატური შევსება ss/myhome/whatsApp </li>
+                        <li>პირადი და საერთო ბაზა</li>
+                        <li>Excel/Sheets-ში მარტივი ექსპორტი</li>
+                        <li>ფოტოების წმენდა ლოგოებისგან</li>
+                        <li>ვებსაიტის ინტეგრაცია/დამზადება</li>
+                        <li>სატესდო & უფასო პაკეტები</li>
+                    </ul>
+
+                    <a href="#contact" class="cta-button">
+                        შეუკვეთე ინსტალაცია
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M5 12h14m-7-7l7 7-7 7" stroke="currentColor" stroke-width="2" fill="none" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="stats-section">
+                <div class="stat-item">
+                    <div class="stat-number">6</div>
+                    <div class="stat-label">სააგენტო</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">9</div>
+                    <div class="stat-label">გუნდი</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">200</div>
+                    <div class="stat-label">ბროკერი</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">∞</div>
+                    <div class="stat-label">მორგებული სისტემა</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="contact-content">
+            <div class="contact-header">
+                <h2>პროგრამის შეკვეთა, დაყენება</h2>
+                <p>მოგვწერეღ whatsApp ზე ან დაააყენეთ დამოუკიდებლად</p>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info-section">
+                    <h3>პირველი 1 თვე უფასოა !</h3>
+                    <p>დაბლა მოცემულია პროგრამის საინსტალაციო და ვიდე რგოლი თუ როგორ დავაყენოთ და გამოვიყენოთ პროგრამა !
+                    </p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>ემაილი</h4>
+                                <p>demskisoft@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item" id="install-video">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>whatsApp</h4>
+                                <p>+ (599) 500 99 17 37</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item" id="download-extension" style="cursor: pointer;">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-cloud-download-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                        d="M8 0a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 4.095 0 5.555 0 7.318 0 9.366 1.708 11 3.781 11H7.5V5.5a.5.5 0 0 1 1 0V11h4.188C14.502 11 16 9.57 16 7.773c0-1.636-1.242-2.969-2.834-3.194C12.923 1.999 10.69 0 8 0m-.354 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V11h-1v3.293l-2.146-2.147a.5.5 0 0 0-.708.708z" />
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>საინსტალაციო Google Extension</h4>
+                                <p>Extension.zip</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-play-btn-fill" viewBox="0 0 16 16">
+                                    <path
+                                        d="M0 12V4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2m6.79-6.907A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z" />
+                                </svg>
+                            </div>
+                            <div class="contact-text">
+                                <h4>ვიდეო ინსტრუქცია</h4>
+                                <p>როგორ დავაყენოთ გამოვიყენოთ</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h4>სოც ქსელი</h4>
+                        <div class="social-buttons">
+                            <a href="https://www.facebook.com/profile.php?id=61574045985194" class="social-btn"
+                                title="Facebook">
+                                <svg viewBox="0 0 24 24">
+                                    <path
+                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                                </svg>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-section">
+                    <form class="contact-form" onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <label for="name">სახელი</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">ემაილი</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">საკითხი</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">მესიჯი</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">გაგზავნა</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-copyright">
+                © 2025 Demo All rights reserved. | Developer <a
+                    href="https://www.facebook.com/profile.php?id=61574045985194" target="_blank"
+                    rel="noopener noreferrer">Desoft</a>
+            </div>
+            <div class="footer-links">
+                <a href="#privacy" onclick="event.preventDefault(); alert('Privacy Policy page would go here');">Privacy
+                    Policy</a>
+                <a href="#terms" onclick="event.preventDefault(); alert('Terms of Service page would go here');">Terms
+                    of Service</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <div class="scroll-to-top" id="scrollToTop">
+        <span>↑</span>
+    </div>
+
+    <script src="templatemo-3d-coverflow-scripts.js"></script>
+
+</body>
+
+</html>
